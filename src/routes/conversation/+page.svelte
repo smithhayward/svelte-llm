@@ -11,7 +11,7 @@
     chatResponse = '';                      // Clear any previous chat responses...
 
     try {
-      const res = await fetch('/api/chat', {
+      const res = await fetch('/api/chat', {  // Chat-GPT did not give me correct information for this. It said to name the file chat.json.ts in the /routes/api folder, but the right answer is to make a +server.ts file in the /routes/api/chat folder
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
